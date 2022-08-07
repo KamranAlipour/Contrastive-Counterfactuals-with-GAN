@@ -4,8 +4,8 @@ Pytorch implementation for the paper https://arxiv.org/pdf/2206.05257.pdf
 
 ## Clone this repo
 ```bash
-git clone https://github.com/KamranAlipour/ContrastiveCFwGAN.git
-cd ContrastiveCFwGAN/
+git clone https://github.com/KamranAlipour/Contrastive-Counterfactuals-with-GAN.git
+cd Contrastive-Counterfactuals-with-GAN/
 ```
 
 ## Download weights
