@@ -110,7 +110,6 @@ class FCShiftPredictor(nn.Module):
         return dir_
 
 
-# +
 classifier_weights = torch.load(classifier_weight_file)
 
 if isinstance(classifier_weights, collections.OrderedDict):
@@ -148,7 +147,6 @@ else:
 
 weight_file_name = 'trained_weights/shift_in_{}_{}_{}_{:1.3f}.pt'.format('w' if args.in_W else 'z', training_name,lbl_ids,faithfulness_ratio)
 
-# +
 load_pretrained = False
 previous_weights = sorted(glob(weight_file_name))
 
@@ -162,7 +160,6 @@ else:
     previous_steps = 0
 
 shift_model = shift_model.to(device).train()
-# -
 
 shift_model_opt = torch.optim.Adam(shift_model.parameters(), lr=shift_predictor_lr)
 
